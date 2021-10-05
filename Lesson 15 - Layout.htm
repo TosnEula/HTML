@@ -1,0 +1,131 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Lesson 15 - Layout</title>
+
+<link href="Test Folder/Notes template.css" style="text/css" rel="stylesheet">
+
+<style style="text/css">
+
+img{
+	flow:left;
+	padding:10px 50px 10px 50px;
+	width: 350px;
+	height:350px;
+	margin: 10px auto 10px auto;}
+	
+#Top_Page{
+	position:fixed;
+	bottom: 0px;
+	right: 10px;
+	text-decoration: none;
+	color:blue;
+	background-color:#b8ced6;
+	z-index:10}
+</style>
+</head>
+
+<body>
+<div class="container_12 clearfix">
+<h1 id="top">Position Schemes</h1>
+<h3>Normal Flow</h3>
+<p>In normal flow, each block-level element sits on top of the next one. Since this is the default way in which browsers treat HTML elements, you do not need a CSS property to 
+indicate that elements should appear in normal flow. <b>The syntax used is <i>position: static;</i></b></p>
+
+<img src="Test Folder/Normal_Flow_1.png" title="Normal Flow HTML">
+<img src="Test Folder/Normal_Flow_2.png" title="Normal Flow CSS">
+<img src="Test Folder/Normal_Flow_3.png" title="Normal Flow Result">
+
+
+<h3>Relative Positioning</h3>
+<p>Relative positioning moves an element in relation to where it would have been in normal flow.For example, you can move it 10 pixels lower than it would have been in 
+normal flow or 20% to the right.<b>The syntax used is <i>position: relative;</i></b></p>
+
+<ul>
+	<li>left</li>
+	<li>right</li>
+	<li>top</li>
+	<li>bottom</li>
+</ul>
+
+<img src="Test Folder/Relative_Positioning_HTML.png" title="Relative Positioning HTML">
+<img src="Test Folder/Relative_Positioning_CSS.png" title="Relative Position CSS">
+<img src="Test Folder/Relative_Positioning_Result.png" title="Relative Positioning Result">
+
+<h3>Absolute Positioning</h3>
+<p>When the position property is given a value of absolute, the box is taken out of normal flow and no longer affects the position of other elements on the page.
+ (They act like it is not there.)<b>The syntax used is <i>position: absolute;</i></b></p>
+
+<img src="Test Folder/Absolute_Positioning_1.png" title="Absolute Positioning HTML">
+<img src="Test Folder/Absolute_Positioning_2.png" title="Absolute Position CSS">
+<img src="Test Folder/Absolute_Positioning_3.png" title="Absolute Positioning Result">
+
+<h3>Fixed Positioning</h3>
+<p>Fixed positioning is a type
+of absolute positioning that positions the element in relation to the browser window. Therefore, when a user scrolls down the page, it stays in the exact same place.
+<b>The syntax used is <i>position: fixed;</i></b></p>
+
+<img src="Test Folder/Fixed_Position_1.png" title="Fixed Positioning HTML">
+<img src="Test Folder/Fixed_Position_2.png" title="Fixed Position CSS">
+<img src="Test Folder/Fixed_Position_3.png" title="Fixed Positioning Result">
+
+
+
+
+<a href="#top" id="Top_Page">Top</a>
+
+
+
+<h3>z-index</h3>
+<p>Controls what element should be on top. Its value is a number, and the higher the number the closer that element is to the front.
+<b>The syntax used is <i>z-index;</i></b></p>
+
+
+<h1>Floats</h1>
+<h3>Floating Elements</h3>
+<p>The <i>float</i> property allows you to take an element in normal flow and place it as far to the left or right of the containing element as possible. Anything else that sits inside the
+ containing element will flow around the element that is floated. When you use the float property, you should also use the width property to indicate how wide the floated element
+ should be.</p>
+
+<img src="Test Folder/Floating_Element_1.png" title="Floating Element HTML">
+<img src="Test Folder/Floating_Element_2.png" title="Floating Element CSS"> 
+<img src="Test Folder/Floating_Element_3.png" title="Floating Element Result">
+
+<h3>Using Floats to Place Elements Side-by-Side</h3>
+<p>The clear property allows you to say that no element (within the same containing element) should touch the left or righthand sides of a box.</p>
+
+<ul>
+	<li>left - The left-hand side of the box should not touch any other elements appearing in the same containing element. </li>
+	<li>right - The right-hand side of the box will not touch elements appearing in the same containing element. </li>
+	<li>both - Neither the left nor right-hand sides of the box will touch elements appearing in the same containing element. </li>
+	<li>none - Elements can touch either side</li>
+</ul>
+
+<a href="Test Folder/Lesson_15_Clear_Example.htm" target="_blank_">clear Example</a>
+
+<h3>Parents of Floated Element Problem</h3>
+<p><b>Problem:</b> If a containing element only contains floated elements, some browsers will treat it as if it is zero pixels tall.</p>
+<p><b>Solution(HTML):</b> Traditionally, developers got around this problem by adding an extra element after the last floated box (inside thecontaining element).<br/></p>
+<p><b>Solution(CSS):</b>The overflow property is given a value auto. The width property is set to 100%.</p>
+
+
+<img src="Test Folder/Float_Problem_1.png" title="Float Problem HTML">
+<img src="Test Folder/Float_Problem_2.png" title="Float Problem CSS"> 
+<img src="Test Folder/Float_Problem_3.png" title="Float Problem Result">
+
+<h3>Grid-Based Layout Using 960.GS</h3>
+<p>we include the CSS for the grid using the <i>link</i> element inside the <i>head</i> of the page.<br	/>
+The HTML uses the class names: container_12 to act as a container for the whole page and indicate that we are using a 12 column grid<br	/>
+clearfix to ensure that browsers know the height of the containing box, because it only contains floated elements.<br	/>
+grid_12 to create a block that is twelve columns wide<br	/>
+grid_4 to create a block that is four columns wide<br	/></p>
+<a href="Test Folder/Grid_Based_Layout_Example.htm" target="_blank_">Grid Layout Example</a>
+
+<h3>Use Multiple Stylesheets</h3>
+<p>@import is used to in the css to import and extra styles. <br />
+Using multiple links can be also utilized for multiple stylesheets.</p>
+
+
+<p></p>
+</body>
+</html>

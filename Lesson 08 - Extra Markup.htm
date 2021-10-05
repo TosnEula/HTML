@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<div>
+<head>
+<title>Lesson 08 - Extra Markup</title>
+</head>
+<body>
+</div> <!	End of Header	>
+
+
+<div>
+
+<h1>Extra Markup</h1>
+<h3>Comments</h3>
+<p>using the element <i>!</i> will add comments to the code.</p> <! cannot be displayed although it is added.>
+<br />
+
+<h3>Id Attribute</h3>
+<p>Also refered to as the <i>Global Attribute</i> it can be used on any element and can be used for individually modifing an element.</p>
+
+<h3>Class Attribute</h3>
+<p class="Change">The <i>class</i> attribute can be used to help distinguish elements that are the same.</p>
+<p>This has no bearing on the page nor the html formatting, unless explictly told in CSS or similar coding languages.</p>
+
+<br />
+
+<h3>Formatting</h3>
+<p><i>block elements</i> are elements that will create a new line when added no matter the situation. Such as: </p>
+<ul>
+	<li>h1</li>
+	<li>p</li>
+	<li>ul</li>
+	<li>li</li>
+</ul>
+
+<p><i>Inline elements</i> are elements that will continue on the same line when created. Such as: </p>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>em</li>
+	<li>img</li>
+</ul>
+
+<br />
+
+<h3>The div Element</h3>
+<p><i>div</i> is used to seperate a block of code from another for easy identification. The <i>id</i> attribute can be used to help easily recognise the purpose or
+adding comments to the end helps with identification.</p>
+
+<br />
+
+<h3>Span Element</h3>
+<p><i>span</i> works similarly to div, although for inline text. Its purpose involves:</p>
+<ul>
+	<li>Contain a section of text where there is no other suitable element to differentiate it from its surrounding text.</li>
+	<li>Contain a number of inline elements.</li>
+</ul>
+
+<h3>Iframe Element</h3>
+<p><i>iframe</i> is used to "cut" into the current webpage another. a common example is the use of map from google.</p>
+<ul>
+	<li>width</li>
+	<li>height</li>
+	<li>src</li>
+	<li>scrolling - Used to identify if the page should have a scroll since the dimensions don't cover the entire page, uses the value yes or no.(<b>XHTML and HTML4 only</b>)</li>
+	<li>frameborder - Gives the webpage a border using 1 or 0.(<b>XHTML and HTML4 only</b>) </li>
+	<li>seamless - can be used for pages that do not have scroll bars, does not require a value but usually given the value seamless. </li>
+	
+</ul>
+
+<iframe
+width="450"
+height="350"
+src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed">
+</iframe>
+
+
+<h3>Information About the Page</h3>
+<p><i>meta</i> is an element that is put in the headign and used for multiple purposes. It is used for telling search engines about your page, who created it, 
+and whether or not it is time sensitive.</p>
+<ul>
+	<li><b>name</b> - Used to choose the value of the name of the attribute being set.</li>
+	<li><b>content</b> - Used to give purpose to the attribute being named.</li>
+	<li><b>http-equiv</b> - works similaraly to name, although mostly used for webpage loading inforamtion.</li>
+	<li>description - This contains a description of the page. This description is commonly used by search engines to understand what the page is about and should be a maximum of 155 characters.
+	Sometimes it is also displayed in search engine results.</li>
+	<li>keywords - This contains a list of commaseparated words that a user might search on to find the page. In practice, this no longer has any noticeable effect
+	on how search engines index your site.</li>
+	<li>robots - This indicates whether search engines should add this page to their search results or not. A value of noindex can be used if this page should not be 
+	added. A value of nofollow can be used if search engines should add this page in their results but not any pages that it links to.</li>
+	<li>author - gives the name of the author of the page</li>
+	<li>pragma - This prevents the browser from caching the page.</li>
+	<li>expires - Because browsers often cache the content of a page, the expires option can be used to indicate when the page should expire (and no longer be cached).</li>
+</ul>
+
+<a href="./Test Folder/Meta Example.htm" target="_blank_"> Using Meta Example<a>
+
+<br />
+
+<h3>Escape Characters</h3>
+<p>Characters which need speical way to be insterted into the page.</p>
+<ul>
+	<li>Less-than sign - &lt; or &#60;</li>
+	<li>Greater-than sign - &gt; or &amp;</li>
+	<li>Ampersand - &amp; or &#38;</li>
+	<li>Quotation mark - &quot; or &#34;</li>
+	<li>Cent sign - &cent; or &#162;</li>
+	<li>Pound sign - &pound; or &#163;</li>
+	<li>Yen sign - &yen; or &#165;</li>
+	<li>Euro sign - &euro; or &#8364;</li>
+	<li>Copyright symbol - &copy; or &#169;</li>
+	<li>Registered trademark - &reg; or &#174;</li>
+	<li>Trademark - &trade; or &#8482;</li>
+	<li>Left single quote - &lsquo; - &#8216;</li>
+	<li>Right single quote - &rsquo; or &#8217; </li>
+	<li>Left double quotes - &ldquo; or &#8220;</li>
+	<li>Right double quotes - &rdquo; or &#8221; </li>
+	<li>Multiplication sign - &times; or &#215; </li>
+
+</ul>
+
+</body>
+</div> <!	End of Body	>
+
+</html>

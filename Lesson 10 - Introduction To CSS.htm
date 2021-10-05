@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 10 - Introduction to CSS</title>
+<style type="text/css">
+
+body {
+	font-family: tahmoa;
+	background-color: rgb(255, 255, 230);}
+</style>
+
+</head>
+
+<body>
+<h1>CSS Structure</h1>
+<h3>Rules</h3>
+<p>A CSS rule contains two parts, a <b>selector</b> and <b>declaration</b>.</p>
+
+<img src="Test Folder/CSS1.png" title="Parts of a class" width="200" height="150"/>
+
+<p>A selector indicates which element the rule applies to. Multiple rules can be indicated by using commas.</p>
+<p>Declarations are used to tell how the element should be styled.</p>
+
+<h3>Declarations</h3>
+<p>Declarations are split into two parts, <b>property</b> and <b>value</b></p>
+
+<img src="Test Folder/CSS2.png" title="Parts of a Declaration" height="150" width="200" />
+
+<p>Properties indicate the aspects of the element you want to change.</p>
+<p>Values specify the settings you want to use for the chosen properties.</p>
+
+<h3>Using External CSS</h3>
+<p>Using <i>&lt;link&gt;</i> applies the CSS stlye to the html webpage. <b>It must be implemented in the <i>head</i></b>.</p>
+<ul>
+	<li>href - Given the vlaue of the directory of the CSS file.</li>
+	<li>type - This attribute specifies the type of document being linked to. <b>The value should be "text/css"</b>.</li>
+	<li>rel - This specifies the relationship between the HTML page and the file it is linked to. The value should be stylesheet when linking to a CSS file.</li>
+</ul>
+
+<a href="Test Folder/Using External CSS.htm" target="_blank_"> External CSS Example</a>
+
+<h3>Using Internal CSS</h3>
+<p>The <i>&lt;Style&gt;</i> element is used to implement CSS rules.<b>Placed inside the <i>head</i> element.</b></p>
+<ul>
+	<li>type - This attribute specifies the type of document being linked to. <b>The value should be "text/css"</b>.</li>
+</ul>
+
+<h3>Selectors</h3>
+<p>A list of common selectors as shown below: </p>
+<img src="Test Folder/Selectors.png" width="500" height="600" title="Selectors">
+
+<br />
+
+<h3>CSS Cascade Rules</h3>
+<p>Last Rule - If the two selectors are identical, the latter of the two will take precedence.
+<br	/>
+Specificity - If one selector is more specific than the others, the more specific rule will take precedence over more general ones. 
+<br />
+<br />
+<b>You can add !important after any property value to indicate that it should be considered more important than other rules that apply to the same element.</b>
+</p>
+
+<p>A element can be forced to inherit the previous elements properties by using the <i>inherit</i></p>
+
+
+</body>
+</html>

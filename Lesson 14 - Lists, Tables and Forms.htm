@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 14 - Lists, Tables and Forms</title>
+<link href="Test Folder/Notes template.css" style="text/css" rel="stylesheet">
+
+
+<style style="text/css">
+
+p, ul, ol{
+	min-width:1000px;
+	max-width:1300px;
+	margin:10px auto 10px auto;
+	}
+
+
+#NO{
+	list-style-type:none;}
+#DI{
+	list-style-type:disc;}
+#CI{
+	list-style-type:circle;}
+#SQ{
+	list-style-type:square;}
+	
+#BulletImg{
+	list-style-image: url("Test Folder/Bullet_Join.png");}	
+
+#ListShort {
+	list-style: inside circle;
+	}
+#ListShort>li {
+	margin: 10px 0px 0px 0px;}
+
+td {
+	border: 1px solid #0088dd;
+	padding: 15px;}
+table.one {
+	empty-cells: show;
+	display:inline;}
+table.two {
+	empty-cells: hide;
+	display:inline;}
+
+table.three {
+	border-spacing: 5px 15px;
+	display:inline;}
+table.four {
+	border-collapse: collapse;
+	display:inline;}
+
+#CursorEX{
+	cursor:crosshair;}
+
+</style>
+
+
+</head>
+
+<body>
+<h1>Lists</h1>
+<h3>Bullet point styles</h3>
+<p>Using the property <i>list-style-type</i> can change the look of the bullet points.</p>
+<ul>
+	<li id="NO">none</li>
+	<li id="DI">disc</li>
+	<li id="CI">circle</li>
+	<li id="SQ">square</li>
+</ul>
+
+<ol>
+	<li>decimal</li>
+	<li>decimal-leading-zero</li>
+	<li>lower-alpha</li>
+	<li>upper-alpha</li>
+	<li>lower-roman</li>
+	<li>upper-roman</li>
+</ol>
+
+<h3>Images for Bullets</h3>
+<p>Using the property <i>list-style-image</i> can give the bullet points unique looks. </p>
+<ul id="BulletImg">
+	<li>Ophelia</li>
+	<li>To Music</li>
+	<li>A Dream for Winter</li>
+	<li>Vowels</li>
+	<li>The Drunken Boat</li>
+</ul>
+
+<h3>Marker Position</h3>
+<p>Using the property <i>list-style-position</i> changes the place that the marker is in.
+<ul>
+	<li>outside</li>
+	<li>inside</li>
+</ul>
+</p>
+
+<h3>List Shorthand</h3>
+<p>Using <i>list-style</i> followed by markers' style, image and position properties in any order.</p>
+
+<ul id="ListShort">
+	<li> I have great faith in fools; self-confidence my friends call it.</li>
+	<li>All that we see or seem is but a dream within a dream.</li>
+	<li>I would define, in brief, the poetry of words as the rhythmical creation of Beauty.</li>
+</ul>
+
+<h1>Tables</h1>
+<h3>Table Properties</h3>
+<p>Follow <a href="Test Folder/CSSTableExample.htm" target="_blank_">this</a> link for an example of multiple properties used to format a table.</p>
+
+<h3>Border on Empty Cells</h3>
+<p>The property <i>empty-cells</i> can change the visibility of the border of the cells</p>
+<ul>
+	<li>show</li>
+	<li>hide</li>
+	<li>inherit</li>
+</ul>
+
+<table class="one">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td></td>
+	</tr>
+</table>
+
+<table class="two">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td></td>
+	</tr>
+</table>
+
+<h3>Gaps between cells</h3>
+<p>The properties <i>border-spacing</i> and <i>border-collapse</i> are both used to control the space between cells.</p>
+<p>border-spacing usage - "horizontal space" , "vertical space"</p>
+<p>border-collapse usage - "separate" or "collapse"</p>
+
+<table class="three">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+
+<table class="four">
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	</tr>
+	
+	<tr>
+		<td>3</td>
+		<td>4</td>
+	</tr>
+</table>
+
+<h1>Styling Forms</h1>
+<h3>Styling Text Inputs</h3>
+<p>font-size: sets the size of the text entered by the user.<br />
+color: sets the text color, and background-color sets the background color of the input. <br />
+border: adds a border around the edge of the input box, and border-radius can be used to create rounded corners (for browsers that support this property). 
+The :focus pseudo-class is used to change the background color of the text input when it is being used. <br />
+The :hover psuedo-class applies the same styles when the user hovers over them. <br />
+background-image: adds a background image to the box. <br /></p>
+
+<h3>Styling Submit Buttons</h3>
+<p>color: is used to change the color of the text on the button.<br />
+text-shadow: can give a 3D look to the text in browsers that support this property.<br />
+border-bottom: has been used to make the bottom border of the button slightly thicker, which gives it a more 3D feel. <br />
+The background-color: can make the submit button stand out from other items around it. (Creating a consistent style for all buttons helps users understand how they should interact with the site.<br />
+The :hover pseudo-class has been used to change the appearance of the button when the user hovers over it.</p>
+
+<h3>Styling Fieldsets &amp; Legends</h3>
+<p><i>Fieldsets</i> are particularly helpful in determining the edges of a form.</p>
+
+<p>The <i>legend</i> is used to indicate what information is required in the fieldset.</p>
+
+
+<ul>
+	<li>width</li>
+	<li>color</li>
+	<li>background-color</li>
+	<li>border</li>
+	<li>border-radius</li>
+	<li>padding</li>
+</ul>
+
+<h3>Cursor Styles</h3>
+<p>The property <i>cursor</i> can change the style of the cursor when hovering over an item.</p>
+<ul>
+	<li>auto</li>
+	<li>crosshair</li>
+	<li>default</li>
+	<li>pointer</li>
+	<li>move</li>
+	<li>text</li>
+	<li>wait</li>
+	<li>help</li>
+	<li>url</li>
+</ul>
+<a id="CursorEX" href="https://en.wikipedia.org/wiki/Cursor_(user_interface)" target="_blank_">Cursor Change</a>
+
+</body>
+</html>

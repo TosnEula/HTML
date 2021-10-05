@@ -1,0 +1,173 @@
+<DOCTYPE html>
+<html>
+
+<head>
+<title>Lesson 13 - Boxes</title>
+<link href="Test Folder/Notes template.css" style="text/css" rel="stylesheet">
+
+<style style="text/css">
+h3{
+	padding-top: 20px;}
+
+p, ul{
+min-width:600px;
+max-width:1300px;
+max-height:400px;
+overflow:hidden;
+margin:10px auto 10px auto;}
+
+#BorderThin{
+	border-color:blue;
+	border-style:solid;
+	border-width:thin;}
+#BorderMed{
+	border-color:black;
+	border-style:solid;
+	border-width:medium;}
+#Borderthick{
+	border-color:black;
+	border-style:solid;
+	border-width:thick;}
+	
+li.one {border-style: solid;}
+li.two {border-style: dotted;}
+li.three {border-style: dashed;}
+li.four {border-style: double;}
+li.five {border-style: groove;}
+li.six {border-style: ridge;}
+li.seven {border-style: inset;}
+li.eight {border-style: outset;}	
+
+#BorderShort{
+	border:medium dashed green;}
+
+#PaddingEX{
+	padding:10px;
+	border:medium solid green;}
+
+#PaddingEX{
+	margin:10px;
+	border:medium solid green;}
+	
+#InlineEX>li{
+	display:inline;}
+#Coming-Soon{
+	display:none;}
+
+</style>
+</head>
+
+<body>
+<div> 
+
+<h1>Boxes</h1>
+<h3>Width &amp; Height</h3>
+<p>Using <i>width</i> and <i>height</i> can control the size of the box. Using percentages and ems will change the box according to the size of the screen or the box that it is in.</p>
+
+<h3>Limiting Width</h3>
+<p>the <i>min-width</i> property specifies the smallest size a box can be displayed at when the browser window is narrow,
+ and the <i>max-width</i> property indicates the maximum width a box can stretch to when the browser window is wide.</p>
+
+<h3>Limiting Height</h3>
+<p>the <i>min-height</i> property specifies the smallest size a box can be displayed,
+ and the <i>max-height</i> property indicates the maximum width a box can stretch to.</p>
+
+<h3>Overflow</h3>
+<p>Using the property <i>overflow</i> allows for the browser to adjust the content according to the specification.
+<ul>
+	<li>hidden - Hides the information that has overflown.</li>
+	<li>scroll - Gives the content a scroll bar to view the extra content.</li>
+</ul></p>
+
+<h1>Parts of Boxes</h1>
+<ul>
+	<li><b>Border</b> - Every box has a border (even if it is not visible or is specified to be 0 pixels wide). The border separates the edge of one box from another.</li>
+	<li><b>Margin</b> - Margins sit outside the edge of the border. You can set the width of a margin to create a gap between the borders of two adjacent boxes.</li>
+	<li><b>Padding</b> - Padding is the space between the border of a box and any content contained within it. Adding padding can increase the readability of its contents.</li>
+</ul>
+
+<h3>Border Width</h3>
+<p>The property <i>border-width</i> to control the size of the border of a box. Can use pixels to specify size or use the preset:
+<ul>
+	<li id="BorderThin">thin</li>
+	<li id="BorderMed">medium</li>
+	<li id="BorderThick">thick</li>
+</ul></p>
+<p>It is possible to specify the side of the border by using the properties, border-bottom-width, border-top-width, border-left-width, border-right-width.</p>
+
+<h3>Border Style</h3>
+<p>The property <i>border-style</i> makes the border visible. the presets are:
+<ul>
+	<li class="one">Wurlitzer Electric Piano</li>
+	<li class="two">Wurlitzer Electric Piano</li>
+	<li class="three">Wurlitzer Electric Piano</li>
+	<li class="four">Wurlitzer Electric Piano</li>
+	<li class="five">Wurlitzer Electric Piano</li>
+	<li class="six">Wurlitzer Electric Piano</li>
+	<li class="seven">Wurlitzer Electric Piano</li>
+	<li class="eight">Wurlitzer Electric Piano</li>
+</ul>
+
+<h3>Border Shorthand</h3>
+<p id="BorderShort">using the <i>border</i> property, putting in the values for width, style and colour in that order creates a border</p>
+
+<h3>Padding</h3>
+<p><i>padding</i> is used to change the space between the content and the border. <b>NOTE:</b>using width to change the box adds the pixels to the padding.</p>
+<p id="PaddingEX">This is an example</p>
+
+<ul>
+	<li>padding-top</li>
+	<li>padding-bottom</li>
+	<li>padding-left</li>
+	<li>padding-right</li>
+</ul>
+
+<h3>Margin</h3>
+<p><i>margin</i> is used to change the space between boxes. <b>NOTE:</b>using width to change the box adds the pixels to the padding.</p>
+<p id="MarginEX">This is an example</p>
+
+<ul>
+	<li>margin-top</li>
+	<li>margin-bottom</li>
+	<li>margin-left</li>
+	<li>margin-right</li>
+</ul>
+
+<h3>Centering Content</h3>
+<p>setting the left and right margin to "auto" will move the content to the center of the screen. First the size of the box has to be set for this to work<p>
+
+<h1>Formatting lists</h1>
+<h3>Changing inline/block</h3>
+<p>The property<i>display</i> will change an element from inline to block and vice versa.</p>
+<ul>
+	<li>inline</li>
+	<li>block</li>
+	<li>inline-block - This causes a block-level element to flow like an inline element, while retaining other features of a block-level element.</li>
+	<li>none - Hides an element from a page.</li>
+</ul>
+
+
+<ul id="InlineEX">
+<li>Home</li>
+<li>Products</li>
+<li id="Coming-Soon">Services</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+
+<h3>Hiding Boxes</h3>
+<p>The property <i>visibility</i> is used to accomplish this. <b>NOTE</b>: this does leave an empty space. display: none; should be used instead if a space is not needed.
+<ul>
+	<li>hidden</li>
+	<li>visible</li>
+</ul></p>
+
+<h3>The rest</h3>
+<p>border-image (USAGE: url("example.com") slice(11 11 11 11) straight edges(strecth/repeat/round))</p>
+<br />
+<p>box-shadow (USAGE: horizontal dist. vertical dist. blur colour)</p>
+<br />
+<p>border-radius (USAGE: pixels)</p>
+</div>
+</body>
+</html>

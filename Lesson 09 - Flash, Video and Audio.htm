@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lesson 09 - Flash, Video and Audio</title>
+<head>
+
+
+<body>
+<h1>Adding Video to The Webpage</h1>
+<h3>The &lt;video&gt; Element</h3>
+<p>The <i>video</i> element is used for adding videos to a webpage.</p>
+<ul>
+	<li>src - describes the path used to find the video.</li>
+	<li>poster - The thumbnail of the video before being played.</li>
+	<li>width &amp; height - controls the size of the player.</li>
+	<li>controls - Chooses to show the playback of the video.</li>
+	<li>autoplay - decides if a video should play once the page loads.</li>	
+	<li>loop - Makes a video play again once finished.</li>
+	<li>preload - determines what should be done to the video during the time it is not played.
+		<ol>
+			<li>none - The browser should not load the video until the user pressesplay.</li>
+			<li>auto - The browser should download the video when the page loads.</li>	
+			<li>metadata - The browser should just collect information such as the size, first frame, track list, and duration.</li>
+		</ol></li>
+</ul>
+
+<video src="Test Folder/Maybe.webm" 
+	width="400" height="300" 
+	poster="Test Folder/Good Name.png" 
+	controls
+	preload="auto"> 
+	<p>What happens</p> 
+	</video>
+
+<h3>Using Source</h3>
+
+<p>The <i>source</i> element helps to add multiple video sources to a webpage.</p>
+<ul>
+	<li>src - describes the path used to find the video.</li>
+	<li>type - tell the browser what format the video is. Otherwise, it will download some of the video to see if it can play the file</li>
+	<li>codecs - The codec that was used to encode the video is supplied within the type attribute.<b>Need to be memorised else cannot be known.</b></li>
+</ul>
+
+
+<video poster="Test Folder/Good Name.png" 
+	controls
+	preload>
+	<source src="Test Folder/Maybe.mp4"
+	type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'
+	width="400" height="300"	/>
+<source src="Test Folder/Maybe.webm"
+	width="400" height="300"
+	type='video/webm;codecs="vp8, vorbis"' />	
+	<p>If the video does not load this text will show.</p> 
+	</video>
+
+<h1>Adding Audio to The Webpage</h1>
+<h3>The &lt;audio&gt; Element</h3>
+<p>Using the element <i>audio</i> is a supported feature in HTML5 which adds audio to a webpage.</p>
+<ul>
+	<li>src - describes the path used to find the video.</li>
+	<li>controls - Chooses to show the playback of the video.</li>
+	<li>autoplay - decides if a video should play once the page loads.</li>	
+	<li>loop - Makes a video play again once finished.</li>
+	<li>preload - determines what should be done to the video during the time it is not played.</li>
+</ul>
+
+<audio src="Test Folder/Audio.mp3"
+	controls
+	preload
+	controls>Test
+	</audio>
+
+<h3>Using Source</h3>
+
+<p>The <i>source</i> element helps to add multiple video sources to a webpage.</p>
+<ul>
+	<li>src - describes the path used to find the video.</li>
+	<li>type - tell the browser what format the video is. Otherwise, it will download some of the video to see if it can play the file. <b>Not used as often</b> </li>
+	<li>codecs - The codec that was used to encode the video is supplied within the type attribute.<b> Need to be memorised else cannot be known.</b></li>
+</ul>
+
+<audio controls
+	preload
+	controls>Test
+	
+	<source src="Test Folder/Audio.mp3" />
+	<source src="Test Folder/Audio.ogg" />
+	<p>This web browser does not support the audio.</p>
+	</audio>
+
+
+</body>
+</html>

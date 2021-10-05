@@ -1,0 +1,152 @@
+<DOCTYPE html>
+<html>
+<head>
+<title>Lesson 06 - Tables</title>
+</head>
+
+<body>
+<h1 id="top">Table Structure</h1>
+<p>Element <i>table</i> is used to start a table. Using the element <i>tr</i> to represent the start of a row in a table. Element <i>td</i> inputs data into the table, stands for <b>table data</b>.</p>
+<p>Use <i>th</i> to represent the <u>table head</u>. A table should always have a heading even if left blank.</p>
+<ul>
+	<li> The attribute <i>scope</i> is needed to show if the heading is for the row or column. Represented by <i>row</i> or <i>col</i></li>
+</ul>
+<br />
+
+<table>
+<tr>
+	<th></th>
+	<th scope="row">Monday</th>
+	<th scope="row">Tuesday</th>
+	<th scope="row">Wednesday</th>
+</tr>
+
+<tr>
+	<th scope="col">Pastries</th>
+	<td>Cookies</td>
+	<td>cake</td>
+	<td>Cupcake</td>
+</tr>
+
+<tr>
+	<th scope="col">Drinks</th>
+	<td>milk</td>
+	<td>Orange Juice</td>
+	<td>Water</td>
+</tr>
+
+<tr>
+	<th scope="col">Main Dish</th>
+	<td>Eggs</td>
+	<td>Bacon</td>
+	<td>Toast</td>
+</tr>
+</table>
+
+
+
+<h1>Formatting Tables</h1>
+<p>Using the attribute <i>colspan</i> on either the element <i>tr</i> or <i>th</i> will make the cell extend the designated amount.</p>
+<p>Likewise, Using the attribute <i>rowspan</i> for the same elements vertically affects a cell.</p>
+
+
+<table>
+<tr>
+	<th></th>
+	<th>9am</th>
+	<th>10am</th>
+	<th>11am</th>
+	<th>12am</th>
+</tr>
+<tr>
+	<th>Monday</th>
+	<td colspan="2">Geography</td>
+	<td>Math</td>
+	<td>Art</td>
+</tr>
+<tr>
+	<th>Tuesday</th>
+	<td colspan="3">Gym</td>
+	<td>Home Ec</td>
+</tr>
+</table>
+<br />
+<table>
+<tr>
+	<th></th>
+	<th>ABC</th>
+	<th>BBC</th>
+	<th>CNN</th>
+</tr>
+
+<tr>
+	<th>6pm - 7pm</th>
+	<td rowspan="2">Movie</td>
+	<td>Comedy</td>
+	<td>News</td>
+</tr>
+
+<tr>
+	<th>7pm - 8pm</th>
+	<td>Sport</td>
+	<td>Current Affairs</td>
+</tr>
+</table>
+
+<br />
+
+<p>Each section of a table should be seperated should it span for a long time. The seperations are:</p>
+<ul>
+<li>thead</li>
+<li>tbody</li>
+<li>tfoot</li>
+</ul>
+
+<table>
+<thead>
+	<tr>
+		<th>Date</th>
+		<th>Income</th>
+		<th>Expenditure</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<th>1st January</th>
+		<td>250</td>
+		<td>36</td>
+	</tr>
+	<tr>
+		<th>2nd January</th>
+		<td>285</td>
+		<td>48</td>
+	</tr>
+<!-- additional rows as above -->
+	<tr>
+		<th>31st January</th>
+		<td>129</td>
+		<td>64</td>
+	</tr>
+</tbody>
+<tfoot>
+	<tr>
+		<td></td>
+		<td>7824</td>
+		<td>1241</td>
+	</tr>
+</tfoot>
+</table>
+
+</body>
+
+<h1>Old Code</h1>
+<ul>
+<li>The attribute <i>width</i> used to be used on the element <i>table</i> to dicate how wide the table should be.</li>
+<li>The attribute <i>cellspacing</i> used to be used on the element <i>table</i> to dicate how much space a cell would have.</li>
+<li>The attribute <i>cellpadding</i> used to be used on the element <i>table</i> to dicate how much space there is between each cell.</li>
+<li>The attribute <i>border</i> used to be used on the element <i>table</i> or <i>td</i> to dicate the thickness of the border between each cell.</li>
+<li>The attribute <i>bgcolor</i> used to be used on the element <i>table</i> or <i>td</i> to change the background colour of a cell.</li>
+</ul>
+
+<a href="#top">Go to top<a>
+</html>

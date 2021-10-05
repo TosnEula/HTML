@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Lesson 12 - Text</title>
+<link href="Test Folder/Notes template.css" style="text/css" rel="stylesheet">
+
+<style style="text/css">
+
+#Multitype{
+	font-family: Arial, Verdana, sans-serif;}
+#Multiword{
+	font-family:"Courier New":}
+	
+#SizePer{
+	font-size: 50%;}
+#SizePix{	
+	font-size: 15px;}
+#SizeEm{
+	font-size:1.3em;}
+
+@font-face{
+	font-family: 'ChunkFiveRegular';
+	src: url('fonts/chunkfive.eot');}
+#DownFont{
+	font-family:ChunkFiveRegular;}
+
+#FontBold{
+	font-weight:bold;}
+#FontNorm{
+	font-weight:normal;}
+	
+#FontItz{
+	font-style:italic;}
+#ItzFontNorm{
+	font-style:normal;}
+#FontObliq{
+	font-style:oblique;}
+	
+#FontUpper{
+	text-transform:uppercase;}
+#FontLower{
+	text-transform:lowercase;}
+#FontCap{
+	text-transform:capitalize;}
+	
+#Textnon{
+	text-decoration:none;}
+#TextUnder{
+	text-decoration:underline;}
+#TextOver{
+	text-decoration:overline;}
+#TextThrough{
+	text-decoration:line-through;}
+#TextBlink{
+	text-decoration:blink;}
+	
+#Leading{
+	line-height: 2em;}
+	
+#TextLeft{
+	text-align:left;}
+#TextRight{
+	text-align:right;}
+#TextCenter{
+	text-align:center;}
+#TextJustify{
+	text-align:justify;}
+	
+#IndentTest{
+	text-indent: 20px;}
+
+#DropShad > li{
+	background-color: #aaaaaa;
+	color: #ffffff;
+	text-shadow: -1px -1px #666666;}
+	
+#PsuedoEle:first-letter{
+	font-weight:bold;
+	font-size:200%;}
+	
+a:link{
+	color:blue;
+	text-decoration:none;}
+a:hover{
+	color:green;
+	text-decoration:line-through;}
+a:active{
+	color:pink;
+	text-decoration:none;
+	font-weight:bold}
+a:visited{
+	color:purple;
+	text-decoration:underline;}
+	
+	
+</style>
+
+
+
+</head>
+
+<body>
+<h1>Ways to Implement Fonts</h1>
+<h3>Font-Family Property</h3>
+<p>The property <i>font-family</i> allows you to specify the typeface that should be used for any text inside the element(s) to which a CSS rule applies.<br />
+The value of this property is the name of the typeface you want to use.</p>
+<ul>
+	<li id="Multitype">You can specify a list of fonts separated by commas so that, if the user does not have your first choice of typeface installed, the browser can try to use an alternative font from the list.</li>
+	<li id="Multiword">Use double quotes for typefaces that are more than one word.</li>
+</ul>
+
+<h3>Font Size</h3>
+<p>The property <i>font-size</i> changes the size of the font in three different ways:
+	<ul>
+		<li id="SizePer">Percentages</li>
+		<li id="SizePix">pixels</li>
+		<li id="SizeEm">EMs -An em is equivalent to the width of a letter m.</li>
+	</ul>
+</p>
+
+<h3>Downloaded Font Face</h3>
+<p>Using <i>@font-face</i> will download a font from a specified location should it not be normally on a computer.<br />
+	<span id="DownFont">Use <i>src</i> to specify the location.</span></p>
+
+<h1>Text Format </h1>
+<h3>Bold</h3>
+<p>The property <i>font-weight</i> is used to make text bold. It has two settings:
+<ul>
+		<li id="FontBold">bold</li>
+		<li id="FontNorm">normal</li>
+</ul></p>
+
+<h3>Italic</h3>
+<p>The property <i>font-style</i> is used to make text italic. It has three settings:
+<ul>
+		<li id="FontItz">italic</li>
+		<li id="ItzFontNorm">normal</li>
+		<li id="FontObliq">oblique - Slanting the letters literally.</li>
+</ul></p>
+
+<h3>Uppercase and Lowercase</h3>
+<p>The property <i>text-transform</i> is used to change the case of words. It has three settings:
+<ul>
+		<li id="FontUpper">uppercase</li>
+		<li id="FontLower">lowercase</li>
+		<li id="FontCap">capitalize - the first letter of each word is capitalized.</li>
+</ul></p>
+
+<h3>Underline and Strike</h3>
+<p>The property <i>text-decoration</i> is used to add lines to the text. The settings are:
+<ul>
+		<li id="Textnon">none</li>
+		<li id="TextUnder">underline</li>
+		<li id="TextOver">overline</li>
+		<li id="TextThrough">line-through</li>
+		<li id="TextBlink">blink</li>
+</ul></p>
+
+<h3>leading</h3>
+<p>pronunced ledding, describes the verical space between letters. The property <i>line-height</i>controls the total height of the text.<br/>
+<span id="Leading">This is an example.</span>
+</p>
+
+<h3>Alignment</h3>
+<p>The property <i>text-align</i> is used to organize text. The settings are:
+<ul>
+		<li id="TextLeft">left</li>
+		<li id="TextRight">right</li>
+		<li id="TextCenter">center</li>
+		<li id="TextJustify">justify - This indicates that every line in a paragraph, except the last line, should be set to take up the full width of the containing box.</li>
+</ul></p>
+
+<h3>Vertical Alignment</h3>
+<p>The property <i>verical-align</i> is used to organize text according to a picture. The settings are:
+<ul>
+		<li>baseline</li>
+		<li>sub</li>
+		<li>super</li>
+		<li>top</li>
+		<li>text-top</li>
+		<li>middle</li>
+		<li>bottom</li>
+		<li>text-bottom</li>
+		<li>Also uses numbers.</li>
+</ul></p>
+
+<h3>Indenting Text</h3>
+<p>The property <i>text-indent</i> indents lines of text. this uses pixels and ems to move text.</p>
+<p id="IndentTest">This is an example.</p>
+
+<h3>Drop Shadow</h3>
+<p>The property <i>text-shadow</i> adds a drop shadow to the text. this uses three values:
+<ul id="DropShad">
+		<li>The first length indicates how far to the left or right the shadow should fall.</li>
+		<li>The second value indicates the distance to the top or bottom that the shadow should fall.</li>
+		<li>The third value is optional and specifies the amount of blur that should be applied to the drop shadow.</li>
+		<li>The fourth value is the color of the drop shadow.</li>
+</ul></p>
+
+<h3>First Letter and Line</h3>
+<p>Using the psuedo-element <i>:first-letter</i> or <i>:first-line</i> can change the first word or line in an element.</p>
+<p id="PsuedoEle">This is an example.</p>
+
+<h3>Styling Links</h3>
+<p>Using the psuedo-element <i>:visted</i> or <i>:link</i> can change the look of the link based upon if the user visted it or not.</p>
+<a href = "https://en.wikipedia.org/wiki/S%C3%A9bastien_Le_Prestre_de_Vauban" target="_blank_">Showing visited</a>
+
+<p><i>:hover</i>, <i>:active</i> and <i>:focus</i> can also be used to modify the look of links.</p>
+
+<h3>Attribute Selector</h3>
+<img src="Test Folder/Attribute Selector.png" title="Attribute Selector">
+</body>
+</html>
